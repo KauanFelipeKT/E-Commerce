@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/conteudo.css">
+    <title>Menu de Exibição de Produtos</title>
+
+</head>
+
+<body>
+    <div id="1"></div>
+    <script>
+        load("header.html");
+        function load(url) {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(1).innerHTML = req.responseText;
+        }
+    </script>
+    <div class="containerProduct">
+        <div class="produto">
+            <img src="img/lovecraft.jpg" alt="Produto 1">
+            <h3>Box H.P LoveCraft</h3>
+            <p>R$ 99,99</p>
+            <button class="button">Comprar</button>
+        </div>
+        <div class="produto">
+            <img src="img/img1984.jpg" alt="Produto 2">
+            <h3>1984 - George Orwel</h3>
+            <p>R$ 89,99</p>
+            <button class="button">Comprar</button>
+        </div>
+        <div class="produto">
+            <img src="img/alice1.webp" alt="Produto 3">
+            <h3>Alice no País das Maravilhas</h3>
+            <p>R$ 79,99</p>
+            <button class="button">Comprar</button>
+        </div>
+        <div class="produto">
+            <img src="img/alice2.jpg" alt="Produto 4">
+            <h3>Alice Através do Espelho</h3>
+            <p>R$ 79,99</p>
+            <button class="button">Comprar</button>
+        </div>
+        <div class="produto">
+            <img src="img/251-lady-killers.webp" alt="Produto 5">
+            <h3>Lady Killers</h3>
+            <p>R$ 69,99</p>
+            <button class="button">Comprar</button>
+        </div>
+        <div class="produto">
+            <img src="img/a-pequena-sereia.webp" alt="Produto 6">
+            <h3>A Pequena Sereia</h3>
+            <p>R$ 59,99</p>
+            <button class="button">Comprar</button>
+        </div>
+        <script src="/conteudo.js"></script>
+    </div>
+    <div id="4"></div>
+    <script>
+        load("footer.html");
+        function load(url) {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(4).innerHTML = req.responseText;
+        }
+    </script>
+</body>
+
+
+
+</html>

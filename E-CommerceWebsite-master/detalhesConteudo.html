@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> CONTEUDO</title>
+    <!-- favicon -->
+    <link rel="icon" href="img/favicon-16x16.png" type="image/gif" sizes="16x16">
+    <!-- <link rel="stylesheet" href="/box1.css"> -->
+    <link rel="stylesheet" href="css/detalhesConteudo.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <!-- header links -->
+    <script src="https://kit.fontawesome.com/4a3b1f73a2.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<!-- HEADER -->
+<div id="1"></div>
+<script>
+    load("header.html");
+    function load(url)
+    {
+        req = new XMLHttpRequest();
+        req.open("GET", url, false);
+        req.send(null);
+        document.getElementById(1).innerHTML = req.responseText;
+    }
+</script>
+    
+    <div id="containerProduct">
+        <div class="product">
+            <img src="img/CORALINE_1166468301B.jpg" onclick="showDetails('details2')">
+            <div id="details2" class="details">
+              <h3>Coraline</h3>
+              <p>Additional details about Prodt 2uc.</p>
+            </div>
+          </div>
+    </div>
+    
+<script src="/conteudo.js"></script>
+
+<!-- FOOTER -->
+<div id="4"></div>
+<script>
+    load("footer.html");
+    function load(url)
+    {
+        req = new XMLHttpRequest();
+        req.open("GET", url, false);
+        req.send(null);
+        document.getElementById(4).innerHTML = req.responseText;
+    }
+</script>
+</body>
+</html>

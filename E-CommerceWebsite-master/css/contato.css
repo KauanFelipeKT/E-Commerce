@@ -1,0 +1,40 @@
+body {
+    background-color: #340574;
+    margin: auto;
+    text-transform: capitalize;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+
+}
+
+h1 {
+    width: 90%;
+    margin: 50PX;
+    padding: 50px 100px;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 2px;
+}
+
+.container {
+    color: #340574;
+    width: 90%;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 800px;
+    height: 800px;
+}
+
+.box {
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    background: #f0eded;
+    margin: 50px;
+}

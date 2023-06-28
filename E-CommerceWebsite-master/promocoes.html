@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/promocoes.css">
+    <title>Menu de Exibição de Produtos</title>
+</head>
+
+<body>
+    <div id="1"></div>
+    <script>
+        load("header.html");
+        function load(url) {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(1).innerHTML = req.responseText;
+        }
+    </script>
+    <div class="containerProduct">
+
+        <div class="produto">
+            <img src="img/CORALINE_1166468301B.jpg" alt="Produto 7">
+            <h3>Coraline</h3>
+            <p>R$ 79,99</p>
+            <button class="button">Comprar</button>
+        </div>
+        <div class="produto">
+            <img src="img/oz-first-edition.webp" alt="Produto 8">
+            <h3>O mágico de Oz</h3>
+            <p>R$ 79,99</p>
+            <button class="button">Comprar</button>
+        </div>
+        <div class="produto">
+            <img src="img/omedico.jpg" alt="Produto 9">
+            <h3>O médico e o Monstro</h3>
+            <p>R$ 69,99</p>
+            <button class="button">Comprar</button>
+        </div>
+        <div class="produto">
+            <img src="img/livro-da-vez-edgar-allan-poe-darkside.webp" alt="Produto 10">
+            <h3>Edgar Alan Poe</h3>
+            <p>R$ 69,99</p>
+            <button class="button">Comprar</button>
+        </div>
+        <div class="produto">
+            <img src="img/aurora-nas-sombras-darkside-02-600x600.jpg" alt="Produto 11">
+            <h3>Aurora Nas Sombras</h3>
+            <p>R$ 89,99</p>
+            <button class="button">Comprar</button>
+        </div>
+        <div class="produto">
+            <img src="img/252-SHMS-Gaiman-6.png" alt="Produto 12">
+            <h3>Seres Mágicos e Histórias Sombrias</h3>
+            <p>R$ 79,99</p>
+            <button class="button">Comprar</button>
+        </div>
+    </div>
+    <script src="/conteudo.js"></script>
+    <div id="4"></div>
+    <script>
+        load("footer.html");
+        function load(url) {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(4).innerHTML = req.responseText;
+        }
+    </script>
+</body>
+
+</html>
+</body>
+
+</html>

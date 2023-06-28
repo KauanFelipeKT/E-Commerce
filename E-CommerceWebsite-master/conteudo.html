@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/conteudo.css">
+    <title>Menu de Exibição de Produtos</title>
+
+</head>
+
+<body>
+    <div class="ordemAlfaNum">
+        <label for="sort-select">Ordenar por:</label>
+
+        <select id="sort-select" onchange="sortItems()">
+            <option value="alphabetical">Ordem Alfabética</option>
+            <option value="price">Preço</option>
+        </select>
+    </div>
+    <select id="compra" onchange="compra()"></select>
+
+
+    <div class="containerProduct">
+        
+        <div class="produto">
+            <img src="img/lovecraft.jpg" alt="Produto 1">
+            <h3>Box H.P LoveCraft</h3>
+            <p>R$ 99,99</p>
+            <button class="button">Comprar</button>
+        </div>
+        <div class="produto">
+            <img src="img/img1984.jpg" alt="Produto 2">
+            <h3>1984 - George Orwel</h3>
+            <p>R$ 89,99</p>
+            <button class="button">Comprar</button>
+        </div>
+        <div class="produto">
+            <img src="img/alice1.webp" alt="Produto 3">
+            <h3>Alice no País das Maravilhas</h3>
+            <p>R$ 79,99</p>
+            <button class="button">Comprar</button>
+        </div>
+        <div class="produto">
+            <img src="img/alice2.jpg" alt="Produto 4">
+            <h3>Alice Através do Espelho</h3>
+            <p>R$ 79,99</p>
+            <button class="button">Comprar</button>
+        </div>
+        <div class="produto">
+            <img src="img/251-lady-killers.webp" alt="Produto 5">
+            <h3>Lady Killers</h3>
+            <p>R$ 69,99</p>
+            <button class="button">Comprar</button>
+        </div>
+        <div class="produto">
+            <img src="img/a-pequena-sereia.webp" alt="Produto 6">
+            <h3>A Pequena Sereia</h3>
+            <p>R$ 59,99</p>
+            <button class="button">Comprar</button>
+        </div>
+        <div class="produto">
+            <img src="img/CORALINE_1166468301B.jpg" alt="Produto 7">
+            <h3>Coraline</h3>
+            <p>R$ 79,99</p>
+            <button class="button">Comprar</button>
+        </div>
+        <div class="produto">
+            <img src="img/oz-first-edition.webp" alt="Produto 8">
+            <h3>O mágico de Oz</h3>
+            <p>R$ 79,99</p>
+            <button class="button">Comprar</button>
+        </div>
+        <div class="produto">
+            <img src="img/omedico.jpg" alt="Produto 9">
+            <h3>O médico e o Monstro</h3>
+            <p>R$ 69,99</p>
+            <button class="button">Comprar</button>
+        </div>
+        <div class="produto">
+            <img src="img/livro-da-vez-edgar-allan-poe-darkside.webp" alt="Produto 10">
+            <h3>Edgar Alan Poe</h3>
+            <p>R$ 69,99</p>
+            <button class="button">Comprar</button>
+        </div>
+        <div class="produto">
+            <img src="img/aurora-nas-sombras-darkside-02-600x600.jpg" alt="Produto 11">
+            <h3>Aurora Nas Sombras</h3>
+            <p>R$ 89,99</p>
+            <button class="button">Comprar</button>
+        </div>
+        <div class="produto">
+            <img src="img/252-SHMS-Gaiman-6.png" alt="Produto 12">
+            <h3>Seres Mágicos e Histórias Sombrias</h3>
+            <p>R$ 79,99</p>
+            <button class="button">Comprar</button>
+        </div>
+    </div>
+    <script src="/conteudo.js"></script>
+</body>
+
+</html>
